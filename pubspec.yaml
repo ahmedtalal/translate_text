@@ -1,7 +1,7 @@
 name: translate_text
 description: A simple Dart package to translate text between languages using the MyMemory Translation API. It provides an easy way to integrate translation features into your Dart or Flutter applications.
 version: 1.2.0
-# repository: https://github.com/my_org/my_repo
+# repository: https://github.com/ahmedtalal/translate_text
 
 environment:
   sdk: ^3.5.3
