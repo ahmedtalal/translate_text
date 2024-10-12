@@ -1,7 +1,7 @@
-import 'package:translate_text/translate_text.dart';
+import 'package:translate_text/translate_text_service.dart';
 
 void main() async{
-  final textService = TranslationService();
+  final textService = TranslateTextService();
  final text= await textService.translateText("Hello World!", "en", "ar");
   print(text);
   //output: مرحبا بالعالم  

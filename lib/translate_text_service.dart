@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 
-class TranslationService {
+class TranslateTextService {
   final String baseUrl = 'https://api.mymemory.translated.net/get';
 
   /// Translates the given [text] from [sourceLang] to [targetLang].
