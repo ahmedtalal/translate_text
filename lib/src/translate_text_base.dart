@@ -3,14 +3,14 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 
 class TranslateTextBase {
-  final String baseUrl = 'https://api.mymemory.translated.net/get';
+  final String _baseUrl = 'https://api.mymemory.translated.net/get';
 
   /// Translates the given [text] from [sourceLang] to [targetLang].
   /// Returns the translated text or throws an exception if the translation fails.
   Future<String> translateText(
       String text, String sourceLang, String targetLang) async {
     final url = Uri.parse(
-        '$baseUrl?q=${Uri.encodeComponent(text)}&langpair=$sourceLang|$targetLang');
+        '$_baseUrl?q=${Uri.encodeComponent(text)}&langpair=$sourceLang|$targetLang');
 
     try {
       final response = await http.get(url);

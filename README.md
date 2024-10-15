@@ -14,4 +14,4 @@ A simple Dart package to translate text between languages using the MyMemory Tra
 
 ```yaml
 dependencies:
-  translate_text: ^1.7.0
+  translate_text: ^1.8.0
