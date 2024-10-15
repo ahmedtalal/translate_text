@@ -1,0 +1,5 @@
+{
+     "editor.fontSize": 13,
+     "files.autoSave": "onFocusChange",
+     "editor.fontFamily": "Monaco,Ubuntu Mono,JetBrains Mono,Fira Code,Consolas, 'Courier New', monospace"
+}

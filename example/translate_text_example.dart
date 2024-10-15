@@ -1,15 +1,15 @@
-import 'package:translate_text/translate_text_service.dart';
+import 'package:translate_text/translate_text.dart';
 
 void main() async{
-  final textService = TranslateTextService();
+  final textService = TranslateTextBase();
  final text= await textService.translateText("Hello World!", "en", "ar");
   print(text);
   //output: مرحبا بالعالم  
 
   // Path to the file containing texts to translate
-  const filePath = 'texts.txt'; // Path to the file containing texts to translate
+  const filePath = 'texts.text'; // Path to the file containing texts to translate
   const sourceLang = 'en';       // Source language code (e.g., 'en' for English)
-  const targetLang = 'es';       // Target language code (e.g., 'es' for Spanish)
+  const targetLang = 'ar';       // Target language code (e.g., 'es' for Spanish)
 
   // Get the translated texts as a single string
   String result = await textService.translateTextsFromFile(filePath, sourceLang, targetLang);
@@ -24,7 +24,7 @@ void main() async{
   List<String> textsToTranslate = [
     'Hello world!',
     'How are you?',
-    'This is a translation test.'
+    'internal server error'
   ];
 
   // Translate the list of texts
